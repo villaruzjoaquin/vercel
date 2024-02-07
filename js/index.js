@@ -8,8 +8,6 @@ let store = [];
 async function appInit() {
     const toDos = await getToDoData();
     console.log(toDos);
-    console.log("Yo");
-
     // Access the keys inside "toDos" then forEach key 
     // assign them a variable called "toDo" and log each of them
     // Object.keys(toDos).forEach(toDo => console.log(toDo));
