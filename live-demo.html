@@ -3,11 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo Page</title>
+    <title>To Do List Live Demo Page</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script type="module" src="js/index.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Demo Page</h1>
-    </header>
+    <nav class="flex justify-between py-2 px-4 mb-8"></nav>
+
+    <header class="max-w-md flex flex-col items-center mx-auto"></header>
+    <main class="max-w-sm mx-auto">
+      <section
+        class="min-h-72 bg-gray-50 shadow-sm border shadow-gray-200/75 rounded-sm"
+      >
+        <div>
+          <h2 class="text-center py-3 font-medium text-xl text-zinc-600">
+            To Do List Item Display
+          </h2>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
