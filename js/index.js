@@ -32,7 +32,7 @@ async function appInit() {
 		div.appendChild(markup);
 	}))
 
-	document.querySelector("main").append(div);
+	document.querySelector(".display-list").append(div);
 
 }
 
