@@ -22,7 +22,7 @@ async function appInit() {
 	// interactive templating
 	// container
 	// batch update ... to dom updates all at once
-	const div = document.createElement('div');
+	const container = document.querySelector(".display-list");
 
 	toDoItems.forEach((markup => {
 		div.appendChild(markup);
