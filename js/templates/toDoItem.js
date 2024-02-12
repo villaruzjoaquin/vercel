@@ -14,9 +14,13 @@ import { toElement } from "./../utils/toElement";
 function toDoItemTemplate(todo) {
     const template = `
 
-    <section class="bg-zinc-50 mb-2 border-l-4 border-purple-600 shadow-sm rounded-xl p-4 md:p-6 lg:p-8 space-y-2 hover:bg-zinc-100 transition-colors duration-300 ease-in-out">
-        <p class="text-gray-800 text-sm md:text-base lg:text-lg font-medium whitespace-pre-line">${todo}</p>
-    </section>
+    <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+        <div class="p-4 md:p-5">
+            <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+            ${todo}
+            </h3>
+        </div>
+    </div>
     `;
 
     return toElement(template);
